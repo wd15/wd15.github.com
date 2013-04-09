@@ -92,7 +92,6 @@ $ sudo -u postgres createuser -P sumatra_user
 To create a database do
 
 {% highlight bash %}
-$ sudo -u postgres createuser -P sumatra_user
 $ su postgres
 postgres$ psql template1
 {% endhighlight %}
