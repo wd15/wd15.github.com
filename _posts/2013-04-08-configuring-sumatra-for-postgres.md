@@ -162,7 +162,9 @@ requires making a number of changes like this:
 in `src/recordstore/django_store/models.py`. There are about 10 of
 these altogether (see the
 [full changeset](https://github.com/wd15/sumatra/commit/0bcafc468c5fe4b93e4f230ad37aca00811ef6ff))
-for all a complete list).
+for all a complete list). The above instructions are valid as of
+commit
+[d65bb4fa1f83](https://neuralensemble.org/hg/sumatra/rev/d65bb4fa1f83).
 
 ### Testing Sumatra for Concurrency
 
