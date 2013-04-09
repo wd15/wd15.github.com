@@ -25,14 +25,14 @@ further discussion on this issue the
 
 In the short term, I decided to use a quick and dirty solution to work
 around this issue using file locks. I couldn't face learning to
-configure Postgres, so the file lock solution allowed me to proceed
-with my work without having to learn the ins and outs of configuring
-Django and Postgres.
+configure Postgres as I have little to no experience with databases.
+The file lock solution allowed me to proceed with my work without
+having to learn the ins and outs of configuring Django and Postgres.
 
 The solution required creating a decorator class
 [available at Github](https://github.com/wd15/sumatra/blob/8b39d73b3cf85dbb8f2ada44a6914a27dff718df/src/smtdecorator.py)
 that encapsulated the Python function to be logged. The two Sumatra
-command that need to be protected from concurrency issues are
+commands that need to be protected from concurrency issues are
 `project.add_record` and `project.save`. Here the `with` statement is
 used to set and release the lock:
 
@@ -68,8 +68,9 @@ of Sumatra.
 
 ### Postgres
 
-Given that the above solution is unsatisfactory, the best alternative
-seems to be to use Postgres. To install Postgres on Ubuntu use:
+Given that the above solution is unsatisfactory, another alternative
+is to use a database that properly handles concurrency. To install
+Postgres on Ubuntu use:
 
 {% highlight bash %}
 $ sudo apt-get install postgresql
