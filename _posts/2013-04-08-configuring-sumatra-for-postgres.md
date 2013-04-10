@@ -18,7 +18,7 @@ itself with Sumatra when dozens of jobs are launched simultaneously
 with each job having a similar life time. In this event most of the
 jobs are not recorded and the unrecorded jobs will sign off with the
 dreaded `django.db.utils.DatabaseError: database is locked`. For
-further discussion on this issue the
+further discussion of this issue see the
 [Sumatra mailing list thread on this topic](https://groups.google.com/forum/?fromgroups=#!topic/sumatra-users/-9Gci0thFLo).
 
 ### Quick and Dirty Solution
@@ -59,8 +59,8 @@ class SMTLock:
 
 The above class requires the
 [lockfile module](https://pypi.python.org/pypi/lockfile). The file
-locking mechanism worked well enough and might be a solution for some
-that want to maintain a lightweight database solution with
+locking mechanism worked well enough and might be a solution for those
+that wish to maintain a lightweight database solution with
 Sumatra. However, it does require making changes to the script or
 program for which the provenance data is being logged. This goes
 against the grain of the "don't change the existing workflow" approach
@@ -70,7 +70,7 @@ of Sumatra.
 
 Given that the above solution is unsatisfactory, another alternative
 is to use a database that properly handles concurrency. To install
-Postgres on Ubuntu use:
+Postgres on Ubuntu use
 
 {% highlight bash %}
 $ sudo apt-get install postgresql
@@ -106,7 +106,7 @@ Exit the Postgres shell prompts and edit
 local      sumatra_db   sumatra_user   trust
 {% endhighlight %}
 
-and relaunch Postgres:
+and relaunch Postgres
 
 {% highlight bash %}
 $ sudo /etc/init.d/postgresql restart
@@ -152,7 +152,7 @@ anything but SQLite and SQLite has no size limits in the way that
 Postgres does (see this
 [stackoverflow thread](http://stackoverflow.com/questions/13736059/databaseerror-at-post-113-value-too-long-for-type-character-varying10)
 for more details). Anyway, fixing the field size problem simply
-requires making a number of changes like this:
+requires making a number of changes like this
 
 {% highlight diff %}
 -    type = models.CharField(max_length=20)
@@ -218,9 +218,9 @@ Check the repository. 101 records. No concurrency issues!
 
 ### What next?
 
-In the near future I hope to submit a patch for this. Hopefully
-include some kind of command line configuration for Sumatra to allow
-easy set up. Something like this:
+In the near future I hope to submit a patch for this and include some
+kind of command line configuration for Sumatra to allow easy set
+up. Something like this
 
 {% highlight bash %}
 $ smt configure --database=postgres --name=sumatra_db --user=sumatra_user --password=password
