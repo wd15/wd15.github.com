@@ -8,7 +8,7 @@ Embedding you tube video:
 
  * Convert pngs to avi.
  
-    $ mencoder -nosound -ovc x264 -x264encopts preset=slow:tune=film:crf=20 -o out.avi mf://*.png type=png:fps=20:w=1920:h=108
+    `$ mencoder -nosound -ovc x264 -x264encopts preset=slow:tune=film:crf=20 -o out.avi mf://*.png type=png:fps=20:w=1920:h=108`
     
  * Speed up the movie by 0.25 (i.e slow it down).
  
