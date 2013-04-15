@@ -12,8 +12,8 @@ Embedding you tube video:
     
  * Speed up the movie by 0.25 (i.e slow it down).
  
-    $ ffmpeg -i out.avi -vf "setpts=(1/0.25)*PTS" out1.avi
+    `$ ffmpeg -i out.avi -vf "setpts=(1/0.25)*PTS" out1.avi`
     
  * Embed in blog post.
  
-    <iframe width="480" height="360" src="http://www.youtube.com/embed/qE9fYpUG3TU" frameborder="0"> </iframe>
+    `<iframe width="480" height="360" src="http://www.youtube.com/embed/qE9fYpUG3TU" frameborder="0"> </iframe>`
