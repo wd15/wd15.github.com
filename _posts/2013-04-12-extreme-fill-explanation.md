@@ -19,7 +19,7 @@ complete absence of deposition on the top surface and walls of the
 feature. The image below of deposition in a silicon via demonstrates
 just how segregated extreme fill can be.
 
-<img src="/images/extremefill.png" alt="Drawing" style="width: 400px;"/>
+<img src="http://www.ctcms.nist.gov/~wd15/jekyll_images/extremefill.png" alt="Drawing" style="width: 400px;"/>
 
 The simplest explanation of extreme fill requires just two equations,
 an equation for the deposition rate, $$i$$, given by
