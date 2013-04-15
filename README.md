@@ -4,7 +4,7 @@ When posts are messed up and not displaying:
 
  * When posts are messed up try `jekyll --safe --no-lsi --pygments --no-server --no-auto`.
 
-Embedding you tube video:
+Embedding Youtube video:
 
  * Convert pngs to avi.
  
