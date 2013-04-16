@@ -7,14 +7,14 @@ tags: []
 ---
 {% include JB/setup %}
 
-Extreme fill is a theory that explains one particular mechanism of
-feature filling in electroplating. It is similar in a number of
-respects to both the
+Extreme fill theory explains one particular mechanism of feature
+filling in electroplating. The mechanism that results in extreme fill
+is similar in a number of respects to both the
 [curvature enhanced accelerator coverage](http://www.ctcms.nist.gov/fipy/examples/levelSet/electroChem/README.html)
 (CEAC) and leveling mechanisms, which are both modulated by additives
 in the electrolyte. In contrast to the CEAC and leveling mechanisms,
-the defining characteristic of extreme fill is highly segregated
-deposition occurring only on the very bottom of the feature with a
+the defining characteristic of extreme fill is the highly segregated
+deposition that occurs only on the very bottom of the feature with a
 complete absence of deposition on the top surface and walls of the
 feature. The image below of deposition in a silicon via demonstrates
 just how segregated extreme fill can be.
