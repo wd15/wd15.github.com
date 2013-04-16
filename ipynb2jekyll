@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+
 IPYNBFILE=$1
 
 FILE=$(basename "${IPYNBFILE}")
@@ -9,7 +9,7 @@ MDFILE=$NAME.md
 
 JEKYLLIMAGES=jekyll_images
 JEKYLLREPO=/home/wd15/git/wd15.github.com
-JEKYLLIMAGESURL=http://www.ctcms.nist.gov/~wd15/$JEKYLLIMAGES
+JEKYLLIMAGESURL="{{ site.imageurl }}"
 
 SERVER=genie
 SERVERDIR=/u/WWW/wd15/$JEKYLLIMAGES
@@ -18,8 +18,8 @@ SERVERDIR=/u/WWW/wd15/$JEKYLLIMAGES
 nbconvert.py --format markdown ${IPYNBFILE}
 
 # upload images and make them public
-# scp -r $NBIMGDIR $SERVER:$SERVERDIR/
-# ssh $SERVER "updatewww"
+scp -r $NBIMGDIR $SERVER:$SERVERDIR/
+ssh $SERVER "updatewww"
 
 # convert image paths in ipython notebook
 sed -i "s|${NBIMGDIR}|${JEKYLLIMAGESURL}/${NBIMGDIR}|g" $MDFILE
