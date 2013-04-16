@@ -128,3 +128,4 @@ JB :
   
 markdown: kramdown
 pygments: true
+imageurl: http://www.ctcms.nist.gov/~wd15/jekyll_images
