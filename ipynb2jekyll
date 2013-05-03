@@ -24,6 +24,9 @@ ssh $SERVER "updatewww"
 # convert image paths in ipython notebook
 sed -i "s|${NBIMGDIR}|${JEKYLLIMAGESURL}/${NBIMGDIR}|g" $MDFILE
 
+# fix code blocks to be python class
+sed -i 's|<pre>|<pre><code class="python">|g' $MDFILE
+sed -i 's|</pre>|</code></pre>|g' $MDFILE
 
 # make a new blog post
 WD=$(pwd)
