@@ -39,32 +39,39 @@
       <div class="nav-collapse collapse navbar-responsive-collapse">
         <ul class="nav pull-right hidden-print">
           <li>
-            <a class="hidden-phone" href="http://github.com/caarlos0/up"
-              title="Get this theme!">
-              <i class="icon-download icon-large"></i>
+            <a class="hidden-phone" title="home" href="/index.html">
+              <i class="icon-home icon-large"></i>
             </a>
-            <a class="visible-phone" href="http://github.com/caarlos0/up"
-              title="Get this theme!">
-              <i class="icon-download icon-large"></i>
-              Get this theme!
+            <a class="visible-phone" title="about" href="/index.html">
+              <i class="icon-home icon-large"></i>
+              home
             </a>
           </li>
           <li>
-            <a class="hidden-phone" title="About me" href="/about">
+            <a class="hidden-phone" title="about" href="/about.html">
               <i class="icon-user icon-large"></i>
             </a>
-            <a class="visible-phone" title="About me" href="/about">
+            <a class="visible-phone" title="about" href="/about.html">
               <i class="icon-user icon-large"></i>
-              About me
+              about
             </a>
           </li>
           <li>
-            <a class="hidden-phone" href="/atom.xml" title="Atom Feed">
+            <a class="hidden-phone" title="github" href="https://github.com/{{ site.author.github }}">
+              <i class="icon-github icon-large"></i>
+            </a>
+            <a class="visible-phone" title="github" href="https://github.com/{{ site.author.github }}">
+              <i class="icon-github icon-large"></i>
+              github
+            </a>
+          </li>
+          <li>
+            <a class="hidden-phone" href="/atom.xml" title="atom">
               <i class="icon-rss icon-large"></i>
             </a>
-            <a class="visible-phone" href="/atom.xml" title="Atom Feed">
+            <a class="visible-phone" href="/atom.xml" title="atom">
               <i class="icon-rss icon-large"></i>
-              Atom Feed
+              atom
             </a>
           </li>
         </ul>
@@ -82,19 +89,19 @@
         <div class="row">
           <div class="col-span-3"></div>
           <div class="col-span-2">
-            <a href="https://twitter.com/{{ site.author.twitter }}">
-              <i class="icon icon-twitter icon-4x"></i>
-              <div>Follow me on Twitter.</div>
-            </a>
+            <!-- <a href="https://twitter.com/{{ site.author.twitter }}"> -->
+            <!--   <i class="icon icon-twitter icon-4x"></i> -->
+            <!--   <div>Follow me on Twitter.</div> -->
+            <!-- </a> -->
           </div>
           <div class="col-span-2"></div>
           <div class="col-span-2 next">
-            <a href="https://github.com/{{ site.author.github }}">
-              <i class="icon icon-github icon-4x"></i>
-              <div>
-                See my github profile.
-              </div>
-            </a>
+            <!-- <a href="https://github.com/{{ site.author.github }}"> -->
+            <!--   <i class="icon icon-github icon-4x"></i> -->
+            <!--   <div> -->
+            <!--     See my github profile. -->
+            <!--   </div> -->
+            <!-- </a> -->
           </div>
           <div class="col-span-3"></div>
         </div>
@@ -107,3 +114,7 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="/js/up.js"></script>
 </html>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
