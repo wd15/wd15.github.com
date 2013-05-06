@@ -6,7 +6,7 @@ title: "About Daniel Wheeler"
 ## Author Profile
 
 I am mostly interested in the development and deployment of software
-for applied scientific application. I am also interested in numerical
+for applied scientific applications. I am also interested in numerical
 algorithms for solving partial differential equations and using and
 developing more general scientific computing tools. My expertise is
 primarily in working with python, python/C interfaces and numerical
