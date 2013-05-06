@@ -1,0 +1,43 @@
+#!/bin/bash
+
+IPYNBFILE=$1
+
+FILE=$(basename "${IPYNBFILE}")
+NAME="${FILE%.*}"
+NBIMGDIR=${NAME}_files
+MDFILE=$NAME.md
+
+JEKYLLIMAGES=jekyll_images
+JEKYLLREPO=/home/wd15/git/wd15.github.com
+JEKYLLIMAGESURL="{{ site.imageurl }}"
+
+SERVER=genie
+SERVERDIR=/u/WWW/wd15/$JEKYLLIMAGES
+
+# convert ipynb to markdwon
+nbconvert.py --format markdown ${IPYNBFILE}
+
+# upload images and make them public
+scp -r $NBIMGDIR $SERVER:$SERVERDIR/
+ssh $SERVER "updatewww"
+
+# convert image paths in ipython notebook
+sed -i "s|${NBIMGDIR}|${JEKYLLIMAGESURL}/${NBIMGDIR}|g" $MDFILE
+
+# fix code blocks to be python class
+sed -i 's|<pre>|<pre><code class="python">|g' $MDFILE
+sed -i 's|</pre>|</code></pre>|g' $MDFILE
+
+# make a new blog post
+WD=$(pwd)
+
+cd $JEKYLLREPO
+POSTFILE=$(rake post title="${NAME}")
+POSTFILE=${POSTFILE#"Creating new post: "} ## not robust
+cat $WD/$MDFILE >> $POSTFILE
+python dollar_replace.py $POSTFILE
+
+# clean up
+cd $WD
+rm -f $MDFILE
+rm -rf $NBIMGDIR
