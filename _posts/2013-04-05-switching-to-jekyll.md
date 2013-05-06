@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
 
 I finally decided to move away from my old [Trac blog][TracBlog] at
 [Matforge](http://matforge.org). [Jekyll Bootstrap][JekyllBootstrap]

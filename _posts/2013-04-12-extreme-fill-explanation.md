@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
 
 Extreme fill theory explains one particular mechanism of feature
 filling in electroplating. The mechanism that results in extreme fill

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
 
 For the last few months I've been using [Sumatra][SMT] to log the
 provenance data for simulations. It's a really promising tool, and I've
