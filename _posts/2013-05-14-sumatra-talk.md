@@ -16,7 +16,8 @@ on "Using Sumatra to Manage Numerical Simulations" (May 14, 2013).
 
 [The HTML slides.](/html/presentation.html) Some of the embedded pages
 in the talk were running from a local server when this was presented
-so won't be available in the slides.
+so won't be available in the slides. Use the arrow keys to shift
+between the slides.
 
 [Git repository for the slides at the commit](https://github.com/wd15/scipy2013/tree/28040e294a30b33a251e8e7531d36a4e8f94b470)
 when the talk was given (28040e).
