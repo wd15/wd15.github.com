@@ -18,4 +18,5 @@ computing environments. I am one of the lead developers of the
 
 See my publications at
 [researcherid](http://www.researcherid.com/rid/C-8994-2009).
- 
+
+![Daniel Wheeler](/avatar.jpg "Daniel Wheeler")
