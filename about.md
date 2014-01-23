@@ -14,9 +14,6 @@ tool kits such as Numpy, Scipy and Trilinos in high performance
 computing environments. I am one of the lead developers of the
 [FiPy](http://www.ctcms.nist.gov/fipy) open-source PDE solver.
 
-## Publications
-
-See my publications at
-[researcherid](http://www.researcherid.com/rid/C-8994-2009).
+<span id='badgeCont398300' style='width:126px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont398300&mashlet=badge&showTitle=false&className=a&rid=C-8994-2009'></script></span>
 
 ![Daniel Wheeler](/avatar.jpg "Daniel Wheeler")
