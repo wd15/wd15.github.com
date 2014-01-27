@@ -112,4 +112,7 @@ and
 
 [https://github.com/tonyfast/NIST_MS_Workshop](https://github.com/tonyfast/NIST_MS_Workshop)
 
+as well as some slides
+
+[http://www.slideshare.net/tonyfast1](http://www.slideshare.net/tonyfast1)
 
