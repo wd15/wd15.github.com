@@ -17,7 +17,7 @@ see attached plot).
 
 I decided to look into this as I haven't been using FiPy in parallel
 for awhile and haven't tested it for efficiency in even longer. I used
-a [simple test case](https://gist.github.com/8717979.git), called
+a [simple test case](https://gist.github.com/8717979), called
 `kris.py`, to test FiPy in parallel. The test case is just a diffusion
 problem on a 3D grid. It uses Gmsh to partition the grid sensibly as
 the non-Gmsh grids in FiPy only use suboptimally sliced partitions. In
