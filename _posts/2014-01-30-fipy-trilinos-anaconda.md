@@ -61,7 +61,7 @@ Traceback (most recent call last):
 EnvironmentError: Gmsh version must be >= 2.0.
 {% endhighlight %}
 
-The system version of Gmsh (installed with the package manager inp
+The system version of Gmsh (installed with the package manager in
 Ubuntu) is 2.8.2 so FiPy's Python error message is clearly
 inaccurate. I searched with the `routed:binomial` error message and
 found
