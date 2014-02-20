@@ -11,3 +11,5 @@ Thumbs.db
 *~
 _assets/bootstrap/tests
 node_modules/
+_posts/_site/
+server/
