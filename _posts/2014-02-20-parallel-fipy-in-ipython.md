@@ -26,5 +26,5 @@ The
 demonstrates how to use IPython's native parallel infrastructure with
 FiPy and presents parallel results on a laptop. The
 [second notebook](http://nbviewer.ipython.org/github/wd15/fipy-efficiency/blob/master/notebooks/cluster.ipynb)
-presents results for up to 48 parallel nodes running on a cluster.
+presents results for up to 48 parallel processes running on a cluster.
    
