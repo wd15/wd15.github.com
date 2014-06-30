@@ -21,25 +21,26 @@ Considering the technology available for data capture in our daily
 lives, the scientific process seems increasingly moribund in
 comparison. My everyday workflow often consists of running multiple
 numerical simulations for multiple projects. Up until recently, I kept
-records of these simulations using mostly manual and entirely ad-hoc
+records of these simulations using mostly manual and entirely ad hoc
 schemes. Intuitively, one would imagine that maintaining simulation
 records for computational processes would be a relatively
 straightforward problem. After all this is a deterministic process
 existing entirely in silico and is seemingly much simpler than
 recording in vivo/vitro as with the Fitbit or an experimental
-apparatus. In practice, I have found maintaining ad-hoc schemes to
-manage simulations to be very difficult and often results in a
-fast degradation of the data after a project has ended.
+apparatus. In practice, I have found that managing numerical
+simulation using ad hoc schemes to be a maintenance nightmare. In
+particular, ad hoc schemes result in fast degradation of data after
+projects end.
 
 I am mystified as to why there are not at least a half-dozen well
 supported, open source projects that address the issues surrounding
 simulation management. Web frameworks that support cloud storage,
-sharing and versioning of simulation metadata should be
-commonplace. I can say with some conviction that scientists have
-sleepwalked through the last 10 years of web technology. It is high
-time to take a step back from research and concentrate on building the
-tools and web infrastructure needed to improve the scientific process
-especially in the realm of scientific computing.
+sharing and versioning of simulation metadata should be commonplace. I
+can say with some conviction that scientists have sleepwalked through
+the last 10 years of web technology. It is high time to take a step
+back from research and concentrate on building the tools and web
+infrastructure needed to improve the scientific process, especially in
+the realm of scientific computing.
 
 ## Workflow, Version Control and Event Control
 
