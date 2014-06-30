@@ -29,8 +29,9 @@ existing entirely in silico and is seemingly much simpler than
 capturing in vivo/vitro data as with the Fitbit or an experimental
 apparatus. In practice, I find that managing numerical simulations and
 the associated output data is a maintenance nightmare mainly because I
-generally use ad hoc management schemes. This results in fast
-degradation of data after projects end.
+tend to alter the ad hoc management schemes frequently. This results
+in fast degradation of data especially after the conclusion of a
+research project.
 
 I am mystified as to why there are not at least a half-dozen well
 supported, open source projects that address the issues surrounding
@@ -52,9 +53,9 @@ control or workflow.  Event control is the versioning and capture of
 metadata assocated with the execution of a workflow (or just a script
 or computer program). Event control shares many similarities with
 version control, but records different types of metadata at each
-*commit*. Git is a simple, robust command line tool for version
-control. It forms a platform for many other high level tools and web
-services (e.g. VisTrails, Github). In my mind, to implement web
+*commit* (or execu<!-- tion). Git is a simple, robust command line tool for -->
+<!-- version control. It forms a platform for many other high level tools -->
+<!-- and web services (e.g.  -->Github). In my mind, to implement web
 infrastructure and fancy cloud services for data provenance, a tool
 along the same lines as Git is required for event control.
 
@@ -98,30 +99,45 @@ changing input parameters (and maybe only tweaking the code
 slightly). Such a well defined mode of working is highly tractable to
 event control and metadata capture.
 
-## Sumatra
+## [Sumatra][sumatra]
 
-Over the last year I've become very interested in the Sumatra project,
-it is beginning to answer some of the issues sorrounding the
-versioning and capture of metadata for simulations. Please do take a
-look at this project and try to use it if fits with your own workflow,
-especially if you are an avid Python user. I have an IPython notebook
-demonstraing the use of Sumatra for simple parallel problem and mixing
-metadata records and output results with Pandas. The single most
-important issue for Sumatra is to reach a ctirical mass of users. The
-many issues on the tracker (X issues tracker alone) will only be
-addressed if the project reaches critical mass. I now use Sumatra for
-all my simulation management and try to fix bugs and contribute back
-to the project whenever I can.
+Over the last year or so I've begun using the [Sumatra][sumatra]
+project to record simulation metadata. The most advantageous feature
+from my perspective is that Sumatra is just a simple command line tool
+that doesn't change my mode of working in any major way. In
+particular, launching a script can be done with one simple command
+
+    $ smt run param_file.json
+
+instead of
+
+    $ python script.py param_file.json
+
+Please do take a look at this project and see if it fits with your own
+workflow, especially if you are an avid Python user. There is
+[plenty of documentation](https://pythonhosted.org/Sumatra/) and I
+have an
+[IPython notebook demonstrating the use of Sumatra](http://nbviewer.ipython.org/github/wd15/smt-demo/blob/master/demo.ipynb)
+for a simple parallel problem. The notebook shows how to load the
+records into a Pandas dataframe and then create custom dataframes
+mixing metadata and simulation output data. For Sumatra to remain a
+healthy open source project, it must reach a critical mass of
+users. In particular there are
+[many issues on the tracker](https://bitbucket.org/apdavison/sumatra/issues?status=new&status=open)
+which will only be addressed with more users and contributors. I
+currently use Sumatra for all my simulation management and try to fix
+bugs and contribute back to the project whenever I can.
 
 ## Cloud Service
 
 I noticed recently that the main developer of Sumatra is now working
-on Sumatra-server. I'm excited that this might form the basis for a
-client-server model for Sumatra and an eventual cloud service for
-simulation management. Such a service would lead to improved sharing
-of data, improved reproducible simulation results and then the
-eventual promised land of aggregation and analytics of metadata (and
-possibly output data) across disparate research projects.
+on [Sumatra-server](https://pypi.python.org/pypi/sumatra-server). I'm
+excited that this might form the basis for a client-server model for
+Sumatra and an eventual cloud service for simulation management. Such
+a service would lead to improved sharing of data, improved
+reproducible simulation results and then the eventual promised land of
+aggregation and analytics of metadata (and possibly output data)
+across disparate research projects.
 
 To elucidate the value a could service for simulation management could
 provide, I would like to raise two of the ideas mentioned in
@@ -131,7 +147,7 @@ about reproducible research. These are:
  * "a declarative metadata standard that you can use to tell a Linux
    VM how to download your data"
 
- * "automated integration tests for papers."
+ * "automated integration tests for papers"
 
 These ideas are at the heart of making simulations truly
 reproducible. I believe that the client-server model of Sumatra can
@@ -155,19 +171,20 @@ storm. In particular the group will make recommendations on issues
 such as workflow management, reproducible research and data provenance
 issues. The group has also discussed physical infrastructure for
 scientific data though I have less interest in that area. From my
-perspective, some important actions NIST can take in the area of
-improving data management include:
+perspective, some important actions NIST can take to improve
+scientific data management at NIST and in the wider scientific
+community include:
 
  * More active engagement with open source projects that are already
    answering the issues surrounding data capture and provenance.
 
- * Reward NIST staff members that are actively supporting the open
-   source community, especially widely used projects that have
-   primary developers external to NIST.
+ * Encourage NIST staff members to actively support the open source
+   community, especially widely used projects that have primary
+   developers external to NIST.
    
- * Take a less NIST-centred viewpoint about cloud services and open
-   source projects. Open source projects are no longer associated with
-   a particular institution.
+ * Take a less NIST-centered viewpoint about cloud services and open
+   source projects. Acknowledge that open source projects are no
+   longer associated with any particular academic institution.
  
  * Start thinking seriously about hosting cloud services for the
    general community including automated data provenance (this is low
@@ -190,18 +207,19 @@ improving data management include:
 ## Conclusion
 
 From my standpoint, we are on the cusp of a revolution in scientific
-data management, which will greatly improve scientific research,
-reproducible science and analytics across disparate research
-projects. In my own corner, an important first step in this revolution
-is the development of effective cloud-based simulation record keeping
-and management. Personally, it would be fun to be a part of this
-revolution in some way by making small contributions to projects such
-as Sumatra. in the big picture, NIST really needs to be at the center
-of supporting and providing cloud services and software tools for
-varying scientific communities in order to remain relevant in the new
-data revolution.
+data management, which will greatly improve scientific research and
+reproducible science and lead to analytics across disparate research
+projects. In particular to my own workflow, an important first step in
+this revolution is the development of effective cloud-based simulation
+record keeping and management. Personally, it is great fun to be part
+of this revolution in some way by making contributions to projects
+such as Sumatra. Looking at the big picture, NIST really needs to be
+at the heart of supporting and providing cloud services and software
+tools for varying scientific communities in order to play a relevant
+part in the scientific data revolution.
 
 Please see the slides from a talk I gave on
 [Managing Numerical Simulations](http://wd15.github.io/diffusion-workshop-2014)
 at the NIST Diffusion Workshop.
 
+[sumatra]: http://neuralensemble.org/sumatra/
