@@ -20,17 +20,17 @@ with upbeat graphics that render the data easily digestible.
 Considering the technology available for data capture in our daily
 lives, the scientific process seems increasingly moribund in
 comparison. My everyday workflow often consists of running multiple
-numerical simulations for multiple projects. Up until recently, I kept
-records of these simulations using mostly manual and entirely ad hoc
-schemes. Intuitively, one would imagine that maintaining simulation
-records for computational processes would be a relatively
-straightforward problem. After all, this is a deterministic process
-existing entirely in silico and is seemingly much simpler than
+numerical simulations across different research projects. Up until
+recently, I kept records of these simulations using mostly manual and
+entirely ad hoc schemes. Intuitively, one would imagine that
+maintaining simulation records for computational processes would be a
+relatively straightforward problem. After all, this is a deterministic
+process existing entirely in silico and is seemingly much simpler than
 capturing in vivo/vitro data as with the Fitbit or an experimental
 apparatus. In practice, I find that managing numerical simulations and
 the associated output data is a maintenance nightmare mainly because I
 tend to alter the ad hoc management schemes frequently. This results
-in fast degradation of data especially after the conclusion of a
+in fast degradation of data, especially after the conclusion of a
 research project.
 
 I am mystified as to why there are not at least a half-dozen well
@@ -38,10 +38,10 @@ supported, open source projects that address the issues surrounding
 simulation management. Web frameworks that support cloud storage,
 sharing and versioning of simulation metadata should be commonplace. I
 can say with some conviction that scientists have sleepwalked through
-the last 10 years of web technology. It is high time to take a step
-back from research and concentrate on building the tools and web
-infrastructure needed to improve the scientific process, especially in
-the realm of scientific computing.
+the last 10 years of web technology development. It is high time that
+we step away from the research and concentrate on building the tools
+and web infrastructure needed to improve the scientific process,
+especially in the realm of scientific computing.
 
 ## Workflow, Version Control and Event Control
 
@@ -50,14 +50,15 @@ advocate for an all encompassing workflow tool that presumes to manage
 every aspect of one's scientific life, but really just a tool to deal
 with event control. Event control is very different from version
 control or workflow.  Event control is the versioning and capture of
-metadata assocated with the execution of a workflow (or just a script
-or computer program). Event control shares many similarities with
-version control, but records different types of metadata at each
-*commit* (or execu<!-- tion). Git is a simple, robust command line tool for -->
-<!-- version control. It forms a platform for many other high level tools -->
-<!-- and web services (e.g.  -->Github). In my mind, to implement web
-infrastructure and fancy cloud services for data provenance, a tool
-along the same lines as Git is required for event control.
+metadata associated with the execution of a workflow (or just a script
+or computer program) while version control records the changes in a
+workflow. Event control shares many similarities with version control,
+but records different types of metadata at each *commit* (or
+execution). Git is a simple, robust command line tool for version
+control. It forms a platform for many other high level tools and web
+services (e.g. Github). In my mind, to implement web infrastructure
+and fancy cloud services for data provenance, a tool along the same
+lines as Git is required for event control.
 
 ## Data and Metadata
 
@@ -65,9 +66,10 @@ An important issue to be aware of is the distinction between output
 data produced by simulations and metadata about simulations. The
 arguments in this blog post are mostly related to the latter. The
 provenance of metadata is, in principle, a much easier problem to deal
-with than the vast quantities of data produced by simulations since
-the size of the metadata is almost inconsequential in comparison. It
-is also much easier to develop simple protocols and standards for
+with than the provenace issues surrounding the vast quantities of data
+produced by simulations. The size of the metadata is almost
+inconsequential in comparison to the simulation output data and it is
+also much easier to develop simple protocols and standards for
 metadata capture. I acknowledge that provenance issues surrounding
 simulation output data are hugely important, but the output data issue
 can not be tackled effectively until the metadata issue is adequately
@@ -85,33 +87,34 @@ this process than the first three assuming the simulation output data
 is readily available. The use of version control may help with general
 workflow and aid reproduction during all of these stages, but it is
 most useful during the development stage. Presumably it is difficult
-to capture much provenance data during the prototyping and development
-stages. Moreover, there is no real need for these stages to be
-formally reproducible. In my opinion, the simulation stage is where
-current practices really need to be improved. This after all is the
-most important part of any project with respect to reproducible
+to capture much provenance data at all during the prototyping and
+development stages. Moreover, there is no real need for these stages
+to be formally reproducible. In my opinion, the simulation stage is
+where current practices really need to be improved. This after all is
+the most important part of any project with respect to reproducible
 research. It forms the backbone of a research project, it is analogous
 to the execution of an experiment as opposed to the assembling of the
 apparatus or rendering of a figure in a laboratory notebook.  Ideally,
 the simulation stage of a project is a mode of working that has a well
-defined workflow and a well developed code base that mostly involves
+defined workflow using a well developed code base and mostly involves
 changing input parameters (and maybe only tweaking the code
 slightly). Such a well defined mode of working is highly tractable to
 event control and metadata capture.
 
 ## [Sumatra][sumatra]
 
-Over the last year or so I've begun using the [Sumatra][sumatra]
-project to record simulation metadata. The most advantageous feature
-from my perspective is that Sumatra is just a simple command line tool
-that doesn't change my mode of working in any major way. In
-particular, launching a script can be done with one simple command
-
-    $ smt run param_file.json
-
-instead of
+Over the last year or so I have been using [Sumatra][sumatra] to
+record simulation metadata. From my perspective, Sumatra's most
+advantageous feature is it's simple implementation as a command line
+tool. It consequently doesn't make deep changes to my mode of
+working. In particular, launching a script requires one simple change
+at the command line from
 
     $ python script.py param_file.json
+
+to
+
+    $ smt run param_file.json
 
 Please do take a look at this project and see if it fits with your own
 workflow, especially if you are an avid Python user. There is
@@ -119,10 +122,10 @@ workflow, especially if you are an avid Python user. There is
 have an
 [IPython notebook demonstrating the use of Sumatra](http://nbviewer.ipython.org/github/wd15/smt-demo/blob/master/demo.ipynb)
 for a simple parallel problem. The notebook shows how to load the
-records into a Pandas dataframe and then create custom dataframes
-mixing metadata and simulation output data. For Sumatra to remain a
-healthy open source project, it must reach a critical mass of
-users. In particular there are
+Sumatra records into a Pandas dataframe and then create custom
+dataframes mixing metadata and simulation output data. For Sumatra to
+remain (or become) a healthy open source project, it must reach a
+critical mass of users. In particular there are
 [many issues on the tracker](https://bitbucket.org/apdavison/sumatra/issues?status=new&status=open)
 which will only be addressed with more users and contributors. I
 currently use Sumatra for all my simulation management and try to fix
@@ -131,15 +134,15 @@ bugs and contribute back to the project whenever I can.
 ## Cloud Service
 
 I noticed recently that the main developer of Sumatra is now working
-on [Sumatra-server](https://pypi.python.org/pypi/sumatra-server). I'm
+on [Sumatra-server](https://pypi.python.org/pypi/sumatra-server). I am
 excited that this might form the basis for a client-server model for
 Sumatra and an eventual cloud service for simulation management. Such
 a service would lead to improved sharing of data, improved
 reproducible simulation results and then the eventual promised land of
-aggregation and analytics of metadata (and possibly output data)
+aggregation and analytics on metadata (and possibly output data)
 across disparate research projects.
 
-To elucidate the value a could service for simulation management could
+To elucidate the value a cloud service for simulation management could
 provide, I would like to raise two of the ideas mentioned in
 [C. Titus Brown's blog post](http://ivory.idyll.org/blog/2014-imagine.html)
 about reproducible research. These are:
@@ -153,13 +156,14 @@ These ideas are at the heart of making simulations truly
 reproducible. I believe that the client-server model of Sumatra can
 meet these two requirements. Regarding the first point: the tool that
 automatically captures the metadata and has the ability to rebuild an
-environment based on that metadata will become the defacto metadata
-standard. For the second point: Sumatra already records the hash for
-output data files and has the functionality to rerun simulations and
-check that the hash matches thereby forming a coarse level regression
-test. Furthermore, integration of Sumatra with Buildbot would allow
-this process to be entirely automated whenever a repository is
-updated.
+environment based on that metadata will become the de facto metadata
+standard. Regarding the second point: Sumatra already records the hash
+for output data files and has the functionality to rerun simulations
+and check that the hash matches thereby forming a coarse level
+regression test. Furthermore, integration of Sumatra with a continuous
+integration framework such as [Buildbot](http://buildbot.net/) would
+allow the testing process to be entirely automated whenever a code
+repository is updated.
 
 ## What can NIST do to help?
 
@@ -197,8 +201,8 @@ community include:
    the right venue for these, I really don't know, but it seems
    strange albeit from my naive position.
 
- * Seek out workflow or data based open source projects that are
-   currently being used widely at NIST (such as
+ * Seek out open source projects addressing workflow and data
+   provenance that are currently being used widely at NIST (such as
    [IPython](http://ipython.org/)) and give grant money to the
    developers. There are multiple benefits to NIST in this approach
    including the possibility to influence these projects to meet NIST
