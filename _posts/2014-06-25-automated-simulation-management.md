@@ -27,9 +27,9 @@ records for computational processes would be a relatively
 straightforward problem. After all this is a deterministic process
 existing entirely in silico and is seemingly much simpler than
 recording in vivo/vitro as with the Fitbit or an experimental
-apparatus. In practice, I have found that managing numerical
-simulation to be a maintenance nightmare mainly because I have used ad
-hoc schemes for most of my career. This has resulted in fast
+apparatus. In practice, I find that managing numerical simulations and
+the associated output data is a maintenance nightmare mainly because I
+generally use ad hoc management schemes. This results in fast
 degradation of data after projects end.
 
 I am mystified as to why there are not at least a half-dozen well
