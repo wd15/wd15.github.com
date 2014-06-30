@@ -28,9 +28,9 @@ straightforward problem. After all this is a deterministic process
 existing entirely in silico and is seemingly much simpler than
 recording in vivo/vitro as with the Fitbit or an experimental
 apparatus. In practice, I have found that managing numerical
-simulation using ad hoc schemes to be a maintenance nightmare. In
-particular, ad hoc schemes result in fast degradation of data after
-projects end.
+simulation to be a maintenance nightmare mainly because I have used ad
+hoc schemes for most of my career. This has resulted in fast
+degradation of data after projects end.
 
 I am mystified as to why there are not at least a half-dozen well
 supported, open source projects that address the issues surrounding
