@@ -79,21 +79,24 @@ of progress during a computational research project.
 
 ![scientific progress](https://raw.githubusercontent.com/wd15/diffusion-workshop-2014/94733caf39782e4f905b744e99bd9aac498344cb/images/workflow.png)
 
-In many ways, the last two stages of this process are quite easy to
-make reproducible assuming one can access the simulation output data
-(another story). Version control helps with all these stages, but is
-especially useful during the development stage. Presumably there is no
-need to capture much provenance data during the prototyping and
-development stage. There is no real need for these stages to be
-formally reproducible. The simulation stage is where current practices
-really need to be improved. This after all is the most important part
-of any project with respect to reproducible research. It is the actual
-execution of the experiment as opposed to the assembling of the
-apparatus or the figure rendering in a paper. In the simulation stage,
-assuming that we have a well developed code base and we are just
-investigating parameters (and maybe only tweaking the code), we are
-now ideally in a mode of working that is well defined and is tractable
-to event control and metadata capture.
+As a general rule, it is easier to reproduce the final two stages of
+this process than the first three assuming the simulation output data
+is readily available. The use of version control may help with general
+workflow and aid reproduction during all of these stages, but it is
+most useful during the development stage. Presumably it is difficult
+to capture much provenance data during the prototyping and development
+stages. Moreover, there is no real need for these stages to be
+formally reproducible. In my opinion, the simulation stage is where
+current practices really need to be improved. This after all is the
+most important part of any project with respect to reproducible
+research. It forms the backbone of a research project, it is analogous
+to the execution of an experiment as opposed to the assembling of the
+apparatus or rendering of a figure in a laboratory notebook.  Ideally,
+the simulation stage of a project is a mode of working that has a well
+defined workflow and a well developed code base that mostly involves
+changing input parameters (and maybe only tweaking the code
+slightly). Such a well defined mode of working is highly tractable to
+event control and metadata capture.
 
 ## Sumatra
 
