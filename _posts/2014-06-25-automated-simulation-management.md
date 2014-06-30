@@ -24,9 +24,9 @@ numerical simulations for multiple projects. Up until recently, I kept
 records of these simulations using mostly manual and entirely ad hoc
 schemes. Intuitively, one would imagine that maintaining simulation
 records for computational processes would be a relatively
-straightforward problem. After all this is a deterministic process
+straightforward problem. After all, this is a deterministic process
 existing entirely in silico and is seemingly much simpler than
-recording in vivo/vitro as with the Fitbit or an experimental
+capturing in vivo/vitro data as with the Fitbit or an experimental
 apparatus. In practice, I find that managing numerical simulations and
 the associated output data is a maintenance nightmare mainly because I
 generally use ad hoc management schemes. This results in fast
@@ -49,30 +49,28 @@ advocate for an all encompassing workflow tool that presumes to manage
 every aspect of one's scientific life, but really just a tool to deal
 with event control. Event control is very different from version
 control or workflow.  Event control is the versioning and capture of
-metadata to do with the execution of a workflow (or just a script or
-computer program). Event control shares many similarities with version
-control, but records different types of metadata at each
+metadata assocated with the execution of a workflow (or just a script
+or computer program). Event control shares many similarities with
+version control, but records different types of metadata at each
 *commit*. Git is a simple, robust command line tool for version
 control. It forms a platform for many other high level tools and web
-services (e.g. VisTrails, Github). In my mind, to start leveraging web
+services (e.g. VisTrails, Github). In my mind, to implement web
 infrastructure and fancy cloud services for data provenance, a tool
 along the same lines as Git is required for event control.
 
 ## Data and Metadata
 
-Another important issue to take note of is the distinction between
-metadata about simulations and output data produced by
-simulations. The rant in this blog post relates to the versioning,
-capture and sharing of metadata about simulations not the actual data
-produced by the simulations. The provenance of metadata is, in
-principle, a much easier problem to deal with than the output data
-provenance problem that is often raised in discussions about
-reproducible research. For one thing, the size of the metadata is
-inconsequential compared with the output data. It is also much easier
-to develop simple protocols and standards for metadata. I acknowledge
-that provenance issues surrounding simulation output data is hugely
-important, but the data issue can't really be tackled effectively
-until the metadata issue is resolved.
+An important issue to be aware of is the distinction between output
+data produced by simulations and metadata about simulations. The
+arguments in this blog post are mostly related to the latter. The
+provenance of metadata is, in principle, a much easier problem to deal
+with than the vast quantities of data produced by simulations since
+the size of the metadata is almost inconsequential in comparison. It
+is also much easier to develop simple protocols and standards for
+metadata capture. I acknowledge that provenance issues surrounding
+simulation output data are hugely important, but the output data issue
+can not be tackled effectively until the metadata issue is adequately
+resolved.
 
 ## Reproducible Research
 
