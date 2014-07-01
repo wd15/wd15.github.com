@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automated Simulation Management"
+title: "Automated Simulation Management and Reproducible Research"
 category: posts
 ---
 
