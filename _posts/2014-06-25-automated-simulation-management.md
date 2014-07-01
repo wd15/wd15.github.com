@@ -66,8 +66,8 @@ An important issue to be aware of is the distinction between output
 data produced by simulations and metadata about simulations. The
 arguments in this blog post are mostly related to the latter. The
 provenance of metadata is, in principle, a much easier problem to deal
-with than the provenace issues surrounding the vast quantities of data
-produced by simulations. The size of the metadata is almost
+with than the provenance issues surrounding the vast quantities of
+data produced by simulations. The size of the metadata is almost
 inconsequential in comparison to the simulation output data and it is
 also much easier to develop simple protocols and standards for
 metadata capture. I acknowledge that provenance issues surrounding
@@ -96,8 +96,8 @@ research. It forms the backbone of a research project, it is analogous
 to the execution of an experiment as opposed to the assembling of the
 apparatus or rendering of a figure in a laboratory notebook.  Ideally,
 the simulation stage of a project is a mode of working that has a well
-defined workflow using a well developed code base and mostly involves
-changing input parameters (and maybe only tweaking the code
+defined workflow. It uses a well developed code base and mostly
+involves changing input parameters (and maybe only tweaking the code
 slightly). Such a well defined mode of working is highly tractable to
 event control and metadata capture.
 
@@ -171,13 +171,13 @@ I am part of the Data Storm Focus Group in the Materials Measurement
 Laboratory at the National Institute of Standards and Technology
 (NIST). The group aims to provide recommendations to upper management
 on the direction NIST needs to take in weathering the future data
-storm. In particular the group will make recommendations on issues
+storm. In particular, the group will make recommendations on issues
 such as workflow management, reproducible research and data provenance
 issues. The group has also discussed physical infrastructure for
 scientific data though I have less interest in that area. From my
 perspective, some important actions NIST can take to improve
-scientific data management at NIST and in the wider scientific
-community include:
+scientific data management practices at NIST and in the wider
+scientific community include:
 
  * More active engagement with open source projects that are already
    answering the issues surrounding data capture and provenance.
@@ -193,14 +193,15 @@ community include:
  * Start thinking seriously about hosting cloud services for the
    general community including automated data provenance (this is low
    hanging fruit in a number of ways and the next frontier in
-   scientific data management). This raises the question of why aren't
-   the government (and by extension NIST) hosting some of the services
-   for academic data or workflow that already exist such as
-   [Figshare](http://figshare.com), [Wakari](https://www.wakari.io/)
-   or [Authorea](https://authorea.com/). Maybe the government isn't
-   the right venue for these, I really don't know, but it seems
-   strange albeit from my naive position.
-
+   scientific data management).  In my opinion, the government (and by
+   extension NIST) should host services for academic data management
+   and workflow along the lines of [Figshare](http://figshare.com),
+   [Wakari](https://www.wakari.io/) or
+   [Authorea](https://authorea.com/). It is possible that the
+   government is not the right venue for these services, but it seems
+   strange to me that the government is not already trying to play
+   this role.
+   
  * Seek out open source projects addressing workflow and data
    provenance that are currently being used widely at NIST (such as
    [IPython](http://ipython.org/)) and give grant money to the
