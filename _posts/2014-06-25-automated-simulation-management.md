@@ -12,7 +12,7 @@ the magic 10,000 steps -- indicating that she has exercised enough to
 satisfy the Fitbit gods. Aside from the small inconvenience of having
 to rush around Wegman's late at night as the staff there give us
 perplexed looks, the Fitbit is a wonderful device. It records the
-number of steps taken each day, one's weight (with the purchase of the
+number of steps taken each day, ones weight (with the purchase of the
 accessory, somewhat pricey, scales), sleep, vertical steps and
 more. The results are stored in the cloud and presented on a website
 with upbeat graphics that render the data easily digestible.
@@ -30,7 +30,7 @@ capturing in vivo/vitro data as with the Fitbit or an experimental
 apparatus. In practice, I find that managing numerical simulations and
 the associated output data is a maintenance nightmare mainly because I
 tend to alter the ad hoc management schemes frequently. This results
-in fast degradation of data, especially after the conclusion of a
+in rapid degradation of data, especially after the conclusion of a
 research project.
 
 I am mystified as to why there are not at least a half-dozen well
@@ -47,7 +47,7 @@ especially in the realm of scientific computing.
 
 I think it is important to be clear at this point that I do not
 advocate for an all encompassing workflow tool that presumes to manage
-every aspect of one's scientific life, but really just a tool to deal
+every aspect of ones scientific life, but really just a tool to deal
 with event control. Event control is very different from version
 control or workflow.  Event control is the versioning and capture of
 metadata associated with the execution of a workflow (or just a script
