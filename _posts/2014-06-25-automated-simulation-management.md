@@ -197,17 +197,14 @@ scientific community include:
    extension NIST) should host services for academic data management
    and workflow along the lines of [Figshare](http://figshare.com),
    [Wakari](https://www.wakari.io/) or
-   [Authorea](https://authorea.com/). It is possible that the
-   government is not the right venue for these services, but it seems
-   strange to me that the government is not already trying to play
-   this role.
+   [Authorea](https://authorea.com/).
    
  * Seek out open source projects addressing workflow and data
    provenance that are currently being used widely at NIST (such as
    [IPython](http://ipython.org/)) and give grant money to the
    developers. There are multiple benefits to NIST in this approach
    including the possibility to influence these projects to meet NIST
-   and the wider community's needs without any large investments.
+   and the wider community's needs without any large investment.
 
 ## Conclusion
 
@@ -216,12 +213,12 @@ data management, which will greatly improve scientific research and
 reproducible science and lead to analytics across disparate research
 projects. In particular to my own workflow, an important first step in
 this revolution is the development of effective cloud-based simulation
-record keeping and management. Personally, it is great fun to be part
-of this revolution in some way by making contributions to projects
-such as Sumatra. Looking at the big picture, NIST really needs to be
-at the heart of supporting and providing cloud services and software
-tools for varying scientific communities in order to play a relevant
-part in the scientific data revolution.
+record keeping and management. For me, it is great fun to be part of
+this revolution in some way by making contributions to projects such
+as Sumatra. Looking at the big picture, NIST really needs to be at the
+heart of supporting and providing cloud services and software tools
+for varying scientific communities in order to play a relevant part in
+the scientific data revolution.
 
 Please see the slides from a talk I gave on
 [Managing Numerical Simulations](http://wd15.github.io/diffusion-workshop-2014)
