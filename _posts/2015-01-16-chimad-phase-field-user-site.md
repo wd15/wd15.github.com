@@ -83,6 +83,6 @@ A mailing list for the community is really important.
 
 ## Some other links along similar lines
 
- * http://rosettacode.org/wiki/Rosetta_Code
+ * [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code)
 
 
