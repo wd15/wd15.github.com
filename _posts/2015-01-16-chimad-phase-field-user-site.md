@@ -12,7 +12,7 @@ University,
 meeting was really aimed at finding ways to unify the effort in
 developing computational tools for phase field simulations and
 especially to reduce replicated effort. The main actionable item that
-came out of the meeting was a requrement for a focused web presence
+came out of the meeting was a requirement for a focused web presence
 for meta analysis and discussion of the various phase field codes
 available. The general consensus was that a GitHub presence for the
 community could serve this purpose. It was suggested that the NIST
