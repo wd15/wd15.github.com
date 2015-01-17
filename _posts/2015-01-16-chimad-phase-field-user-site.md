@@ -46,7 +46,8 @@ What are the aims of a GitHub site for the phase field community:
    field problems with hooks into multiple codes
 
 I should add the caveat that the above is probably biased in favor of
-some of my ideas.
+some of my own ideas rather than ideas from all suggestions at the
+meeting.
 
 ## Setting up the GitHub site
 
