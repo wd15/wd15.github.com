@@ -19,5 +19,5 @@ the Ansible YAML file could either be buried in the
 [`setup.bash`](https://github.com/wd15/fipy-dockerize/blob/master/setup.bash)
 or the
 [`Dockerfile`](https://github.com/wd15/fipy-dockerize/blob/master/Dockerfile). Ansible
-seems to do a nice job of creating a clean set of declartive
+seems to do a nice job of creating a clean set of declarative
 statements for the installation procedure.
